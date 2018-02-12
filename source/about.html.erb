@@ -3,6 +3,38 @@ title: Le Wagon - Middleman - About
 ---
 
 <div id="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <h1>This template was built with
+            <i class="fa fa-heart"> </i></h1>
+          </div>
+          <ul class="list-inline text-center">
+            <%
+            team = [
+              { fullname: "Mark van Riet", gh_name: "MarkLeWagon" }
+            ]
+            %>
+            <% team.each do |member| %>
+            <li>
+              <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{member[:gh_name]}", class: "img-circle" %>
+              <h3><%= member[:fullname] %></h3>
+            </div>
+          </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- "AlmuVera" -->
+
+<!-- <i class="fa fa-heart"> -->
+<!--
+title: Le Wagon - Middleman - About
+---
+<div id="about">
   <div class="about-content">
     <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
     <ul class="list-inline">
@@ -22,3 +54,6 @@ title: Le Wagon - Middleman - About
     </ul>
   </div>
 </div>
+
+
+
